@@ -110,8 +110,16 @@ export function allRGB(colors: string[]): boolean {
  * And the array [] would become "0=0".
  */
 export function makeMath(addends: number[]): string {
-    let sum = 0;
-    return "";
+    // if empty array given, then default string
+    if (addends.length === 0) {
+        return "0=0";
+    }
+    // find the sum
+    const sum: number = addends.reduce(
+        (total: number, num: number) => (total += num),
+        0
+    );
+    return sum + "=" + addends.join("+");
 }
 
 /**
@@ -124,5 +132,31 @@ export function makeMath(addends: number[]): string {
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
  */
 export function injectPositive(values: number[]): number[] {
-    return [];
+    // empty array, sum = 0
+    if (values.length === 0) {
+        return [0];
+    }
+    // find the index of the first negative number
+    const negative: number = values.findIndex(
+        (value: number): boolean => value < 0
+    );
+    // if no negative numbers in the array
+    if (negative === -1) {
+        const sum = values.reduce(
+            (total: number, num: number) => (total += num),
+            0
+        );
+        const result = [...values];
+        result.push(sum);
+        return result;
+    }
+    // sum together the result
+    const sum = values.reduce(
+        (total: number, num: number) =>
+            values.indexOf(num) < negative ? (total += num) : (total += 0),
+        0
+    );
+    const result = [...values];
+    result.splice(negative + 1, 0, sum);
+    return result;
 }
