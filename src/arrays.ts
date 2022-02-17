@@ -150,7 +150,7 @@ export function injectPositive(values: number[]): number[] {
         result.push(sum);
         return result;
     }
-    // sum together the result
+    // sum together the result and create new array with sum inserted
     const sum = values.reduce(
         (total: number, num: number) =>
             values.indexOf(num) < negative ? (total += num) : (total += 0),
