@@ -1,8 +1,8 @@
-import { getMouseEventOptions } from "@testing-library/user-event/dist/utils";
-import { urlToHttpOptions } from "url";
+//import { getMouseEventOptions } from "@testing-library/user-event/dist/utils";
+//import { urlToHttpOptions } from "url";
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
-import { addOption, duplicateQuestion, makeBlankQuestion } from "./objects";
+import { duplicateQuestion, makeBlankQuestion } from "./objects";
 
 /**
  * Consumes an array of questions and returns a new array with only the questions
