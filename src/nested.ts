@@ -1,5 +1,8 @@
+import { getMouseEventOptions } from "@testing-library/user-event/dist/utils";
+import { urlToHttpOptions } from "url";
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
+import { addOption, duplicateQuestion, makeBlankQuestion } from "./objects";
 
 /**
  * Consumes an array of questions and returns a new array with only the questions
@@ -182,7 +185,9 @@ export function addNewQuestion(
     name: string,
     type: QuestionType
 ): Question[] {
-    return [];
+    const blank = makeBlankQuestion(id, name, type);
+    const withNew = [...questions, blank];
+    return withNew;
 }
 
 /***
@@ -195,7 +200,13 @@ export function renameQuestionById(
     targetId: number,
     newName: string
 ): Question[] {
-    return [];
+    const renamed = questions.map(
+        (question: Question): Question => ({
+            ...question,
+            name: question.id === targetId ? newName : question.name
+        })
+    );
+    return renamed;
 }
 
 /***
@@ -210,7 +221,18 @@ export function changeQuestionTypeById(
     targetId: number,
     newQuestionType: QuestionType
 ): Question[] {
-    return [];
+    const changed = questions.map(
+        (question: Question): Question => ({
+            ...question,
+            type: question.id === targetId ? newQuestionType : question.type,
+            options:
+                question.id === targetId &&
+                newQuestionType === "short_answer_question"
+                    ? []
+                    : question.options
+        })
+    );
+    return changed;
 }
 
 /**
@@ -229,7 +251,22 @@ export function editOption(
     targetOptionIndex: number,
     newOption: string
 ) {
-    return [];
+    const edited = questions.map(
+        (question: Question): Question => ({
+            ...question,
+            options:
+                question.id === targetId && targetOptionIndex === -1
+                    ? [...question.options, newOption]
+                    : [...question.options]
+        })
+    );
+    if (targetOptionIndex !== -1) {
+        const index = edited.findIndex(
+            (question: Question): boolean => question.id === targetId
+        );
+        edited[index].options.splice(targetOptionIndex, 1, newOption);
+    }
+    return edited;
 }
 
 /***
@@ -243,5 +280,15 @@ export function duplicateQuestionInArray(
     targetId: number,
     newId: number
 ): Question[] {
-    return [];
+    const index = questions.findIndex(
+        (question: Question): boolean => question.id === targetId
+    );
+    const withDuplicated = questions.map(
+        (question: Question): Question => ({
+            ...question
+        })
+    );
+    const duplicate = duplicateQuestion(newId, withDuplicated[index]);
+    withDuplicated.splice(index + 1, 0, duplicate);
+    return withDuplicated;
 }
