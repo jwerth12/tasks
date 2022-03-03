@@ -14,7 +14,6 @@ function App(): JSX.Element {
             <header className="App-header">
                 Jenn Werth :) UD CISC275 with React Hooks and TypeScript
             </header>
-<<<<<<< HEAD
             <h1>Travel Bucketlist</h1>
             <img
                 src="https://i2-prod.mirror.co.uk/incoming/article23661643.ece/ALTERNATES/n615/1_Beaty-limestone-rock.jpg"
@@ -59,7 +58,6 @@ function App(): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Hello World!
             </p>
-=======
             <hr></hr>
             <Counter></Counter>
             <hr />
@@ -72,7 +70,6 @@ function App(): JSX.Element {
             <ChangeType></ChangeType>
             <hr />
             <CycleHoliday></CycleHoliday>
->>>>>>> upstream/task-state
         </div>
     );
 }
