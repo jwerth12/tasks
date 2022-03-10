@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import { ColoredBox } from "../bad-components/ColoredBox";
+//import { ColoredBox } from "../bad-components/ColoredBox";
 
 export function ChangeColor(): JSX.Element {
     const [color, setColor] = useState<string>("");
@@ -39,14 +39,14 @@ export function ChangeColor(): JSX.Element {
                 ))}
             </Form.Group>
             You have chosen{" "}
-            <div
+            <span
                 data-testid="colored-box"
                 style={{
                     backgroundColor: color
                 }}
             >
                 {color}.
-            </div>
+            </span>
         </div>
     );
 }
