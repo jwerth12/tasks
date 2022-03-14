@@ -16,6 +16,7 @@ import { GiveAttempts } from "./form-components/GiveAttempts";
 import { EditMode } from "./form-components/EditMode";
 import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "./form-components/ChangeColor";
+import { Quizzer } from "./quizzer/Quizzer";
 
 function App(): JSX.Element {
     return (
@@ -30,6 +31,7 @@ function App(): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Hello World!
             </p>
+            <Quizzer></Quizzer>
             <hr></hr>
             {<DoubleHalf></DoubleHalf>}
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
