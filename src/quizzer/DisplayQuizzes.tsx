@@ -15,7 +15,20 @@ export function DisplayQuizzes(): JSX.Element {
             Quizzes:
             <Form.Group controlId="quizdisplay">
                 {QUIZZES.map((quiz: Quiz) => (
-                    <div>{quiz.title}</div>
+                    <div
+                        key="display"
+                        style={{ border: "1px solid blue", padding: "4px" }}
+                    >
+                        <div key="quiz">
+                            <strong>{quiz.title}</strong>
+                        </div>
+                        <div key="description">
+                            Description: {quiz.description}
+                        </div>
+                        <div key="numQuestions">
+                            There are {quiz.numQuestions} questions
+                        </div>
+                    </div>
                 ))}
             </Form.Group>
         </div>
