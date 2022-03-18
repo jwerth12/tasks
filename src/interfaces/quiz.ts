@@ -1,10 +1,12 @@
-import { Question } from "./question";
-export type QuestionType = "multiple_choice_question" | "short_answer_question";
-
+import { quizQuestion } from "././quizquestion";
 //export type QuizType = "multiple_choice" | "short answer";
 export interface Quiz {
+    /** a unique quiz title */
     title: string;
+    /** a description of what the quiz is about */
     description: string;
+    /** the number of questions in the quiz */
     numQuestions: number;
-    questions: string[];
+    /** an array of questions that are asked in the quiz */
+    questions: quizQuestion[];
 }
