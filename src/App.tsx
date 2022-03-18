@@ -17,6 +17,7 @@ import { EditMode } from "./form-components/EditMode";
 import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "./form-components/ChangeColor";
 import { Quizzer } from "./quizzer/Quizzer";
+import sketch from "./QuizzerSketch.png";
 
 function App(): JSX.Element {
     return (
@@ -66,6 +67,12 @@ function App(): JSX.Element {
             <ChangeType></ChangeType>
             <hr />
             <CycleHoliday></CycleHoliday>
+            <img
+                src={sketch}
+                alt="Sketch of Quizzer"
+                width="500"
+                height="500"
+            />
         </div>
     );
 }
