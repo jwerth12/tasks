@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import quizzes from "../data/quizzes.json";
 import { Quiz } from "../interfaces/quiz";
+//import { Form } from "react-bootstrap";
 
 const QUIZZES = quizzes.map(
     (quiz): Quiz => ({
@@ -10,6 +11,11 @@ const QUIZZES = quizzes.map(
 );
 
 export function DisplayQuizzes(): JSX.Element {
+    const [choice, setChoice] = useState<string>("");
+    function updateChoice(title: string) {
+        setChoice(title);
+    }
+
     return (
         <div>
             Quizzes:
@@ -28,9 +34,13 @@ export function DisplayQuizzes(): JSX.Element {
                         <div key="numQuestions">
                             There are {quiz.numQuestions} questions
                         </div>
+                        <Button onClick={() => updateChoice(quiz.title)}>
+                            Take Quiz!
+                        </Button>
                     </div>
                 ))}
             </Form.Group>
+            <div>You have chosen to take the {choice}</div>
         </div>
     );
 }
