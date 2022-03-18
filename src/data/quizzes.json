@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Simple Math Quiz",
+        "description": "Basic arithmetic",
+        "numQuestions": 4,
+        "questions": [
+            {
+                "question": "What is 2+2?",
+                "answer": "4",
+                "type": "multiple_choice_question",
+                "order": 1,
+                "options": ["1", "2", "3", "4"],
+                "published": true
+            },
+            {
+                "question": "What is 2*2?",
+                "answer": "4",
+                "type": "multiple_choice_question",
+                "order": 2,
+                "options": ["1", "2", "3", "4"],
+                "published": true
+            },
+            {
+                "question": "What is 2/2",
+                "answer": "1",
+                "type": "multiple_choice_question",
+                "order": 3,
+                "options": ["1", "2", "3", "4"],
+                "published": true
+            },
+            {
+                "question": "What is 2-2",
+                "answer": "0",
+                "type": "multiple_choice_question",
+                "order": 4,
+                "options": ["1", "2", "3", "0"],
+                "published": true
+            }
+        ]
+    },
+    {
+        "title": "Trivia Quiz",
+        "description": "Trivia questions",
+        "numQuestions": 2,
+        "questions": [
+            {
+                "question": "What is the name of the UD Mascot?",
+                "type": "multiple_choice_question",
+                "options": ["Bluey", "YoUDee", "Charles the Wonder Dog"],
+                "answer": "YoUDee",
+                "order": 1,
+                "published": false
+            },
+            {
+                "question": "How many goats are there usually on the Green?",
+                "type": "multiple_choice_question",
+                "options": [
+                    "Zero, why would there be goats on the green?",
+                    "18420",
+                    "Two"
+                ],
+                "answer": "Two",
+                "order": 2,
+                "published": false
+            }
+        ]
+    }
+]
