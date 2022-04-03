@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
-import quizzes from "../data/quizzes.json";
+import { Form } from "react-bootstrap";
 import { Quiz } from "../interfaces/quiz";
 import { quizQuestion } from "../interfaces/quizquestion";
-import { DisplayQuestions } from "./displayQuestions";
+//import { DisplayQuestions } from "./displayQuestions";
 
 export function TakeQuiz(quiz: Quiz): JSX.Element {
     /*
@@ -39,7 +38,7 @@ export function TakeQuiz(quiz: Quiz): JSX.Element {
                         {question.options.map((option: string) => (
                             <Form.Check
                                 inline
-                                key={option}
+                                key={question.order} // key should be umique to question
                                 value={option}
                                 type="radio"
                                 name={option}
@@ -55,19 +54,3 @@ export function TakeQuiz(quiz: Quiz): JSX.Element {
         </div>
     );
 }
-
-/*
-{question.options.map((option: string) => (
-                            <Form.Check
-                                inline
-                                key={option}
-                                value={option}
-                                type="radio"
-                                name={option}
-                                onChange={updateChoice}
-                                id="option-check"
-                                label={option}
-                                checked={choice === option} // this aint it chief
-                            />
-                        ))}
-                        */
