@@ -18,7 +18,7 @@ PASS src/HtmlCss.test.tsx
           at div
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
-          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:14:33)
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
           at div
           at Quizzer
           at div
@@ -38,7 +38,7 @@ PASS src/HtmlCss.test.tsx
           at div
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
-          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:14:33)
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
           at div
           at Quizzer
           at div
@@ -58,7 +58,7 @@ PASS src/HtmlCss.test.tsx
           at div
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
-          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:14:33)
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
           at div
           at Quizzer
           at div
@@ -78,7 +78,7 @@ PASS src/HtmlCss.test.tsx
           at div
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
-          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:14:33)
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
           at div
           at Quizzer
           at div
@@ -102,9 +102,7 @@ PASS src/form-components/GiveAttempts.test.tsx
 PASS src/form-components/ChangeColor.test.tsx
 PASS src/components/Counter.test.tsx
 PASS src/components/RevealAnswer.test.tsx
-PASS src/bad-components/ColoredBox.test.tsx
-PASS src/bad-components/ShoveBox.test.tsx
-PASS src/quizzer/Quizzer.test.tsx
+FAIL src/quizzer/Quizzer.test.tsx
   ● Console
 
     console.error
@@ -112,7 +110,7 @@ PASS src/quizzer/Quizzer.test.tsx
           at div
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
-          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:14:33)
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
           at div
           at Quizzer
 
@@ -125,6 +123,416 @@ PASS src/quizzer/Quizzer.test.tsx
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19080:14)
 
+    console.error
+      Warning: Encountered two children with the same key, `display`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+          at div
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
+          at div
+          at Quizzer
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19080:14)
+
+    console.error
+      Warning: Encountered two children with the same key, `display`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+          at div
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
+          at div
+          at Quizzer
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19080:14)
+
+    console.error
+      Warning: Encountered two children with the same key, `display`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+          at div
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
+          at div
+          at Quizzer
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19080:14)
+
+  ● Quizzer Tests › The Quizzer renders
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/Take Quiz!/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuizzer[0m
+          [36m</h3>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mSimple Math Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mBasic arithmetic[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m4[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mTrivia Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mTrivia questions[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m2[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuizzer[0m
+          [36m</h3>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mSimple Math Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mBasic arithmetic[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m4[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mTrivia Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mTrivia questions[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m2[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      13 |         // Add more tests, more components, more test files!
+      14 |         render(<Quizzer />);
+    > 15 |         const quizElement = screen.getByRole("button", { name: /Take Quiz!/i });
+         |                                    ^
+      16 |         expect(quizElement).toBeInTheDocument();
+      17 |     });
+      18 |     test("Clicking Take Quiz button displays quiz", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:15:36)
+
+  ● Quizzer Tests › Clicking Take Quiz button displays quiz
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/Take Quiz!/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuizzer[0m
+          [36m</h3>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mSimple Math Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mBasic arithmetic[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m4[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mTrivia Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mTrivia questions[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m2[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuizzer[0m
+          [36m</h3>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mSimple Math Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mBasic arithmetic[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m4[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mTrivia Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mTrivia questions[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m2[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      19 |         const consoleSpy = jest.spyOn(console, "log");
+      20 |         render(<Quizzer />);
+    > 21 |         const button = screen.getByRole("button", { name: /Take Quiz!/i });
+         |                               ^
+      22 |         userEvent.click(button);
+      23 |         expect(consoleSpy).toHaveBeenCalledWith("Take Quiz");
+      24 |     });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:21:31)
+
+PASS src/bad-components/ColoredBox.test.tsx
+PASS src/bad-components/ShoveBox.test.tsx
 PASS src/text.test.tsx
   ● Console
 
@@ -133,7 +541,7 @@ PASS src/text.test.tsx
           at div
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
-          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:14:33)
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
           at div
           at Quizzer
           at div
@@ -156,7 +564,7 @@ PASS src/App.test.tsx
           at div
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
-          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:14:33)
+          at DisplayQuizzes (/home/runner/work/tasks/tasks/src/quizzer/DisplayQuizzes.tsx:15:33)
           at div
           at Quizzer
           at div
@@ -174,7 +582,7 @@ PASS src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   98.89 |    97.77 |   98.47 |   98.88 |                   
+All files                    |    95.4 |     96.8 |   94.16 |   95.35 |                   
  src                         |     100 |      100 |     100 |     100 |                   
   App.tsx                    |     100 |      100 |     100 |     100 |                   
   arrays.ts                  |     100 |      100 |     100 |     100 |                   
@@ -205,13 +613,372 @@ All files                    |   98.89 |    97.77 |   98.47 |   98.88 |
   question.ts                |       0 |        0 |       0 |       0 |                   
   quiz.ts                    |       0 |        0 |       0 |       0 |                   
   quizquestion.ts            |       0 |        0 |       0 |       0 |                   
- src/quizzer                 |      75 |      100 |   66.66 |      75 |                   
-  DisplayQuizzes.tsx         |   71.42 |      100 |      60 |   71.42 | 16,37             
+ src/quizzer                 |   36.84 |       75 |   33.33 |   36.84 |                   
+  DisplayQuizzes.tsx         |   66.66 |       75 |      60 |   66.66 | 18-19,42          
   Quizzer.tsx                |     100 |      100 |     100 |     100 |                   
+  TakeQuiz.tsx               |       0 |      100 |       0 |       0 | 20-40             
+  displayQuestions.tsx       |       0 |      100 |       0 |       0 | 5-12              
 -----------------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 23 passed, 23 total
-Tests:       140 passed, 140 total
+Summary of all failing tests
+FAIL src/quizzer/Quizzer.test.tsx
+  ● Quizzer Tests › The Quizzer renders
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/Take Quiz!/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuizzer[0m
+          [36m</h3>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mSimple Math Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mBasic arithmetic[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m4[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mTrivia Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mTrivia questions[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m2[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuizzer[0m
+          [36m</h3>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mSimple Math Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mBasic arithmetic[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m4[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mTrivia Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mTrivia questions[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m2[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      13 |         // Add more tests, more components, more test files!
+      14 |         render(<Quizzer />);
+    > 15 |         const quizElement = screen.getByRole("button", { name: /Take Quiz!/i });
+         |                                    ^
+      16 |         expect(quizElement).toBeInTheDocument();
+      17 |     });
+      18 |     test("Clicking Take Quiz button displays quiz", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:15:36)
+
+  ● Quizzer Tests › Clicking Take Quiz button displays quiz
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/Take Quiz!/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz![0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuizzer[0m
+          [36m</h3>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mSimple Math Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mBasic arithmetic[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m4[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mTrivia Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mTrivia questions[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m2[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuizzer[0m
+          [36m</h3>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mSimple Math Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mBasic arithmetic[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m4[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 1px solid blue; padding: 10px;"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<strong>[39m
+                    [0mTrivia Quiz[0m
+                  [36m</strong>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mDescription: [0m
+                  [0mTrivia questions[0m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [0mThere are [0m
+                  [0m2[0m
+                  [0m questions[0m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mTake Quiz![0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      19 |         const consoleSpy = jest.spyOn(console, "log");
+      20 |         render(<Quizzer />);
+    > 21 |         const button = screen.getByRole("button", { name: /Take Quiz!/i });
+         |                               ^
+      22 |         userEvent.click(button);
+      23 |         expect(consoleSpy).toHaveBeenCalledWith("Take Quiz");
+      24 |     });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:21:31)
+
+
+Test Suites: 1 failed, 22 passed, 23 total
+Tests:       2 failed, 139 passed, 141 total
 Snapshots:   0 total
-Time:        17.009 s
+Time:        19.53 s
 Ran all test suites.
