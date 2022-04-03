@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
-import quizzes from "../data/quizzes.json";
-import { isQuestion } from "../functions";
-import { Quiz } from "../interfaces/quiz";
-import { quizQuestion } from "../interfaces/quizquestion";
+import { Form } from "react-bootstrap";
 
 export function DisplayQuestions(options: string[]): JSX.Element {
     const [choice, setChoice] = useState<string>("");
-    const choices: string[] = [];
+    //const choices: string[] = [];
     function updateChoice(event: React.ChangeEvent<HTMLInputElement>) {
         setChoice(event.target.value);
         // update choices array with this value, index must match the question order
