@@ -33,6 +33,7 @@ export function DisplayQuestions(options: string[]): JSX.Element {
                 label={options[1]}
                 //checked={choice === options[1]}
             ></Form.Check>
+            {choice}
         </div>
     );
 }
