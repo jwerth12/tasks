@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { DisplayQuizzes } from "./DisplayQuizzes";
 //import { Question } from "../interfaces/question";
 
@@ -12,6 +12,7 @@ A question can either be right or wrong (expected answer vs not)
 */
 
 export function Quizzer(): JSX.Element {
+    //const [isSelected, select] = useState<boolean>(false);
     return (
         <div>
             <h3>Quizzer</h3>
