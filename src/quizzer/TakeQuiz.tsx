@@ -25,6 +25,7 @@ export function TakeQuiz(quiz: Quiz): JSX.Element {
         setChoice(event.target.value);
         // update choices array with this value, index must match the question order
         //const index = quiz.questions.indexOf(event.target.value);
+        choices.push(choice);
     }
     return (
         <div>
