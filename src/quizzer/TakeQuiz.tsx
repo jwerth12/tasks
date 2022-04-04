@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { Quiz } from "../interfaces/quiz";
 import { quizQuestion } from "../interfaces/quizquestion";
 //import { DisplayQuestions } from "./displayQuestions";
@@ -18,23 +18,31 @@ export function TakeQuiz(quiz: Quiz): JSX.Element {
    */
 
     const [choice, setChoice] = useState<string>("");
-    let choices: string[]; // array of selected choices, for scoring later
+    let choices: string[] = Array(quiz.numQuestions); // array of selected choices, for scoring later
 
     // set choice must be independent for each question because should be able to select answer for each
     function updateChoice(event: React.ChangeEvent<HTMLInputElement>) {
         setChoice(event.target.value);
         // update choices array with this value, index must match the question order
         //const index = quiz.questions.indexOf(event.target.value);
-        choices.push(choice);
+        //choices[question.order] = event.target.value;
+        choices.push(event.target.value);
+    }
+    function clearChoices() {
+        setChoice("");
+        choices = [];
+    }
+    function checkAnswers(): number {
+        return 0;
     }
     return (
         <div>
             {quiz.title}
             <Form.Group controlId="quiz">
                 {quiz.questions.map((question: quizQuestion) => (
-                    <div key={question.question}>
+                    <div key={question.question} data-testid="question">
                         <div>
-                            {question.order}) {question.question}
+                            {question.order} {question.question} (1 point)
                         </div>
                         {question.options.map((option: string) => (
                             <Form.Check
@@ -46,12 +54,14 @@ export function TakeQuiz(quiz: Quiz): JSX.Element {
                                 onChange={updateChoice}
                                 id="option-check"
                                 label={option}
-                                //checked={choice === option} // this aint it chief
+                                checked={choice === option}
                             />
                         ))}
                     </div>
                 ))}
             </Form.Group>
+            <Button onClick={clearChoices}>Clear Answers</Button>
+            <Button onClick={checkAnswers}>Submit Answers</Button>
         </div>
     );
 }
