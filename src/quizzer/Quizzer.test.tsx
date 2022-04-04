@@ -3,8 +3,6 @@ import { render, screen } from "@testing-library/react";
 import { Quizzer } from "./Quizzer";
 //import { TakeQuiz } from "./TakeQuiz";
 import userEvent from "@testing-library/user-event";
-import { DisplayQuizzes } from "./DisplayQuizzes";
-import { TakeQuiz } from "./TakeQuiz";
 
 describe("Quizzer Tests", () => {
     beforeEach(() => {
