@@ -24,7 +24,8 @@ export function DisplayQuizzes(): JSX.Element {
                 <Form.Group controlId="quizdisplay">
                     {QUIZZES.map((quiz: Quiz) => (
                         <div
-                            key="display"
+                            data-testid="quizDetails"
+                            key={quiz.title}
                             style={{
                                 border: "1px solid blue",
                                 padding: "10px"
@@ -48,6 +49,7 @@ export function DisplayQuizzes(): JSX.Element {
             )}
             {takingQuiz && (
                 <div>
+                    {choice.title}
                     <TakeQuiz
                         title={choice.title}
                         description={choice.description}
