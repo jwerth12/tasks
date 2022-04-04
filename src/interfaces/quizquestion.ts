@@ -13,4 +13,5 @@ export interface quizQuestion {
     options: string[];
     /** published boolean, used to later decide if want to publish or unpublish question */
     published: boolean;
+    //points: number;
 }
